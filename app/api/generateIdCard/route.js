@@ -6,7 +6,7 @@ import { NextResponse } from "next/server";
 
 
 export async function POST(request) {
-  const MEMBER_TYPE = "Thank You For Accepting The Membership.";
+  let MEMBER_TYPE = "Thank You For Accepting The Membership.";
   try {
     await connectDB();
 
