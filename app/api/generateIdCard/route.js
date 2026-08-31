@@ -6,7 +6,8 @@ import { NextResponse } from "next/server";
 
 
 export async function POST(request) {
-  let MEMBER_TYPE = "Thank You For Accepting The Membership.";
+  let memberType = "Thank You For Accepting The Membership.";
+
   try {
     await connectDB();
 
@@ -17,20 +18,20 @@ export async function POST(request) {
 
     let member = await Member.findOne({ mob: mobileNumber });
     if (!member) {
-      member = await MemberA.findOne({mob:mobileNumber})
-      MEMBER_TYPE="Thank you for accepting the active membership."
-      if(!member) {
-        member = await MemberD.findOne({mob:mobileNumber})
-        MEMBER_TYPE="Thank you for supporting the organization."
+      member = await MemberA.findOne({ mob: mobileNumber });
+      memberType = "Thank you for accepting the active membership.";
+
+      if (!member) {
+        member = await MemberD.findOne({ mob: mobileNumber });
+        memberType = "Thank you for supporting the organization.";
+
         if (!member) {
           return NextResponse.json({ error: "Member not found" }, { status: 404 });
         }
       }
     }
-    console.log({...member,MEMBER_TYPE})
-   
 
-    return NextResponse.json({...member._doc,MEMBER_TYPE}, {
+    return NextResponse.json({ ...member._doc, MEMBER_TYPE: memberType }, {
       status: 200,
     });
   } catch (error) {
