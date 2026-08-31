@@ -1,0 +1,153 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Brand color palette */
+  --brand-primary-burgundy: #641526;
+  --brand-dark-burgundy: #3E0D18;
+  --brand-royal-gold: #C79A45;
+  --brand-champagne: #E4C77A;
+  --brand-ivory: #F7F3EA;
+  --brand-white: #FFFFFF;
+  --brand-text-dark: #171316;
+
+  /* UI variables */
+  --background: var(--brand-ivory);
+  --foreground: var(--brand-text-dark);
+  --card: var(--brand-white);
+  --card-foreground: var(--brand-text-dark);
+  --popover: var(--brand-white);
+  --popover-foreground: var(--brand-text-dark);
+  --primary: var(--brand-primary-burgundy);
+  --primary-foreground: var(--brand-white);
+  --secondary: var(--brand-royal-gold);
+  --secondary-foreground: var(--brand-text-dark);
+  --muted: var(--brand-champagne);
+  --muted-foreground: var(--brand-dark-burgundy);
+  --accent: var(--brand-champagne);
+  --accent-foreground: var(--brand-primary-burgundy);
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: var(--brand-royal-gold);
+  --radius: 0.625rem;
+  
+  --sidebar: var(--brand-white);
+  --sidebar-foreground: var(--brand-text-dark);
+  --sidebar-primary: var(--brand-primary-burgundy);
+  --sidebar-primary-foreground: var(--brand-white);
+  --sidebar-accent: var(--brand-champagne);
+  --sidebar-accent-foreground: var(--brand-primary-burgundy);
+  --sidebar-border: #e2e8f0;
+  --sidebar-ring: var(--brand-royal-gold);
+}
+
+.dark {
+  --background: var(--brand-dark-burgundy);
+  --foreground: var(--brand-ivory);
+  --card: var(--brand-text-dark);
+  --card-foreground: var(--brand-ivory);
+  --popover: var(--brand-text-dark);
+  --popover-foreground: var(--brand-ivory);
+  --primary: var(--brand-royal-gold);
+  --primary-foreground: var(--brand-text-dark);
+  --secondary: var(--brand-primary-burgundy);
+  --secondary-foreground: var(--brand-white);
+  --muted: var(--brand-primary-burgundy);
+  --muted-foreground: var(--brand-ivory);
+  --accent: var(--brand-royal-gold);
+  --accent-foreground: var(--brand-text-dark);
+  --destructive: #7f1d1d;
+  --destructive-foreground: #fecaca;
+  --border: #334155;
+  --input: #334155;
+  --ring: var(--brand-royal-gold);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-[#C79A45] selection:text-white;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-tiro-devanagari-hindi), serif;
+  }
+}
+
+/* Google Translate Widget Styling */
+#google_translate_element .goog-logo-link,
+#google_translate_element .goog-te-gadget span {
+  display: none !important;
+}
+
+#google_translate_element .goog-te-gadget {
+  font-size: 0;
+}
+
+#google_translate_element select.goog-te-combo {
+  font-size: 13px !important;
+  padding: 4px 10px;
+  border: 1px solid rgba(199, 154, 69, 0.4);
+  border-radius: 6px;
+  height: 32px;
+  background-color: #ffffff;
+  color: #171316;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#google_translate_element select.goog-te-combo:focus {
+  outline: none;
+  border-color: #C79A45;
+  box-shadow: 0 0 0 2px rgba(199, 154, 69, 0.2);
+}
+
