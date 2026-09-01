@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="bg-gradient-to-b from-[#3E0D18] via-[#641526] to-[#2B0810] text-white pt-12 pb-10 border-t-2 border-[#C79A45]/40 shadow-2xl">
         <Container>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-            
+
             {/* Organization Info */}
             <div className="flex flex-col space-y-4">
               <h2 className="text-2xl font-extrabold text-[#E4C77A] tracking-tight">
@@ -49,7 +49,7 @@ const Footer = () => {
               <ul className="space-y-2 text-xs sm:text-sm">
                 {[
                   { label: t("common.home") || "मुख्य पृष्ठ", href: "/" },
-                  { label: t("common.about") || "हमारे बारे में", href: "/about" },
+                  // { label: t("common.about") || "हमारे बारे में", href: "/about" },
                   { label: t("common.gallery") || "गैलरी", href: "/gallery/images" },
                   { label: t("footer.membership") || "ऑनलाइन सदस्यता", href: "/join/new" },
                   { label: t("common.contact") || "संपर्क करें", href: "/contact" },
