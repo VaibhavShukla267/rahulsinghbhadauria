@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="relative w-full aspect-[21/9] min-h-[160px] xs:min-h-[200px] sm:min-h-[340px] max-h-[620px] flex items-center justify-center">
         <Image
           src="/Hero%20image.png"
-          alt="Rahul Singh Bhadauria Banner"
+          alt="Rahul Singh Bhadauriya Banner"
           fill
           priority
           sizes="100vw"

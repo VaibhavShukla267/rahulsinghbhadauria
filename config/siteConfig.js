@@ -2,9 +2,9 @@
 
 const siteConfig = {
   // Branding Details
-  organizationNameEn: "Rahul Singh Bhadauria",
+  organizationNameEn: "Rahul Singh Bhadauriya",
   organizationNameHi: "राहुल सिंह भदौरिया",
-  founderNameEn: "Rahul Singh Bhadauria",
+  founderNameEn: "Rahul Singh Bhadauriya",
   founderNameHi: "राहुल सिंह भदौरिया",
 
   // Contact Information
@@ -22,7 +22,7 @@ const siteConfig = {
 
   // Founder Widgets
   founder: {
-    name: "Rahul Singh Bhadauria",
+    name: "Rahul Singh Bhadauriya",
     facebookUrl: "https://www.facebook.com/rsb27official",
     // Iframe src urls
     facebookWidgetSrc: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frsb27official&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId",

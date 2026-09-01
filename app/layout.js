@@ -20,13 +20,13 @@ const tiroDevanagariHindi = Tiro_Devanagari_Hindi({
 });
 
 export const metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://rahulsinghbhadauria.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://rahulsinghbhadauriya.com'),
   title: {
     default: siteConfig.organizationNameHi,
     template: `%s | ${siteConfig.organizationNameHi}`
   },
   description: "राहुल सिंह भदौरिया का आधिकारिक वेब पोर्टल। ऑनलाइन सदस्यता, जनसमस्या निवारण एवं जनसेवा गतिविधियां।",
-  keywords: ["Rahul Singh Bhadauria", "राहुल सिंह भदौरिया", "Lucknow", "Kanpur", "Kalyanpur"],
+  keywords: ["Rahul Singh Bhadauriya", "राहुल सिंह भदौरिया", "Lucknow", "Kanpur", "Kalyanpur"],
   authors: [{ name: siteConfig.founderNameEn }],
   icons: {
     icon: "/favicon.ico",
@@ -34,7 +34,7 @@ export const metadata = {
   openGraph: {
     title: siteConfig.organizationNameHi,
     description: "राहुल सिंह भदौरिया का आधिकारिक वेब पोर्टल",
-    url: "https://rahulsinghbhadauria.com",
+    url: "https://rahulsinghbhadauriya.com",
     siteName: siteConfig.organizationNameEn,
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: siteConfig.organizationNameEn,
-    description: "Official web portal of Rahul Singh Bhadauria",
+    description: "Official web portal of Rahul Singh Bhadauriya",
     images: ["/Hero%20image.png"],
   },
 };
@@ -62,8 +62,8 @@ export default function RootLayout({ children }) {
     "@type": "Person",
     "name": siteConfig.founderNameEn,
     "alternateName": siteConfig.founderNameHi,
-    "url": "https://rahulsinghbhadauria.com",
-    "image": "https://rahulsinghbhadauria.com/png.png",
+    "url": "https://rahulsinghbhadauriya.com",
+    "image": "https://rahulsinghbhadauriya.com/png.png",
     "jobTitle": "Leader & Social Worker",
     "address": {
       "@type": "PostalAddress",

@@ -62,7 +62,7 @@ function TwitterWidget() {
             
             {/* Account Details */}
             <div className="text-center">
-              <h2 className="text-xl font-bold text-gray-800">Rahul Singh Bhadauria</h2>
+              <h2 className="text-xl font-bold text-gray-800">Rahul Singh Bhadauriya</h2>
               <p className="text-sm text-pink-600 font-semibold mt-0.5">@rsb27official</p>
             </div>
             

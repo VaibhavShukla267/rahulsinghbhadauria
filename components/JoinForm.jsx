@@ -233,7 +233,7 @@ export default function FormComponent() {
         key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
         amount: Number(amount) * 100,
         currency: "INR",
-        name: "Rahul Singh Bhadauria",
+        name: "Rahul Singh Bhadauriya",
         description: "Online Membership Payment",
         order_id: orderId,
         handler: async function (response) {

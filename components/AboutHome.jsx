@@ -27,7 +27,7 @@ export default function AboutUs() {
           <div className="relative w-64 h-80 sm:w-80 sm:h-96 md:w-88 md:h-[420px] rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-amber-900/10 group">
             <Image
               src="/AboutMe.png"
-              alt="Rahul Singh Bhadauria"
+              alt="Rahul Singh Bhadauriya"
               fill
               sizes="(max-width: 768px) 100vw, 420px"
               className="object-cover object-top transition-transform duration-500 group-hover:scale-105"

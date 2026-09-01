@@ -67,7 +67,7 @@ function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-amber-50/40 via-white to-amber-50/20 py-12 px-4">
       <div className="max-w-6xl mx-auto space-y-10">
-        
+
         {/* Page Title Header */}
         <div className="text-center space-y-2">
           <div className="inline-flex items-center gap-2 bg-[#641526] text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
@@ -82,7 +82,7 @@ function Page() {
 
         {/* Contact Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-          
+
           {/* Left Column: Map & Quick Contacts */}
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-white rounded-3xl p-4 shadow-xl border border-amber-900/10 h-[320px] overflow-hidden">
@@ -108,7 +108,7 @@ function Page() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-[#C79A45] shrink-0" />
-                  <span>info@rahulsinghbhadauria.com</span>
+                  <span>rahulsinghbhadauriya@gmail.com</span>
                 </div>
               </div>
             </div>

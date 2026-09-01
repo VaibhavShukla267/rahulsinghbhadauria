@@ -39,7 +39,7 @@ function Page() {
               <div className="relative w-48 h-60 shrink-0 rounded-2xl overflow-hidden shadow-lg border-2 border-white">
                 <Image
                   src="/AboutMe.png"
-                  alt="Rahul Singh Bhadauria"
+                  alt="Rahul Singh Bhadauriya"
                   fill
                   sizes="200px"
                   className="object-cover object-top"

@@ -12,7 +12,7 @@ const NavBar = () => {
           <div className="relative w-10 h-10 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-[#C79A45] shadow-xs group-hover:scale-105 transition-transform duration-300 shrink-0">
             <Image 
               src="/favicon.ico" 
-              alt="Rahul Singh Bhadauria Logo" 
+              alt="Rahul Singh Bhadauriya Logo" 
               fill
               sizes="(max-width: 640px) 40px, 56px"
               className="object-cover"

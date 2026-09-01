@@ -6,7 +6,7 @@ const uri = process.env.MONGODB_URI;
 const client = new MongoClient(uri);
 
 // Database and collection names
-const DATABASE_NAME = "rahulsinghbhadauria";
+const DATABASE_NAME = "rahulsinghbhadauriya";
 const COLLECTION_NAME = "padAvedan";
 
 async function connectToDatabase() {
